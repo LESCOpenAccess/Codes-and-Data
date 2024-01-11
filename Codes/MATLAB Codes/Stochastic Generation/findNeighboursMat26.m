@@ -1,4 +1,4 @@
-function NeighboursInd, = findNeighboursMat26(Index,MatrixSize)
+function NeighboursInd = findNeighboursMat26(Index,MatrixSize)
 %% Modified from:
 %%**************************************************************************
 % Module name:      findNeighbours.m

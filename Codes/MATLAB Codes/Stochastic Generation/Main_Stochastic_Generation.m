@@ -9,12 +9,12 @@
 % INPUTS -----------------
 folder_struct = '/'; % folder where to save the electrodes
 filename_struct = 'Electrode' ; % Name of the svaed file for the electrode
-N = 10 ; % Number of electrodes to generate
-dimension = [30 30 150] ; % x/y/z dimension of the electrode (um)
-dimension(3) = dimesnion(3)*1.2 ; % TO account for the cropping in ElectrodeGeneration
+N = 1 ; % Number of electrodes to generate
+dimension = [30 30 100] ; % x/y/z dimension of the electrode (um)
+dimension(3) = dimension(3)*1.2 ; % To account for the cropping in ElectrodeGeneration
 resolution = 1/3; % Resolution of the electrodes (um/pixel)
-composition = [93 7]; % Weight ratio between AM and CBD
-porosity = 0.20 ; % Porosity of the electrode
+composition = [90 10]; % Weight ratio between AM and CBD
+porosity = 0.30 ; % Porosity of the electrode
 density_NMC = 4.65 ;
 density_CBD = 0.95 ;
 % ------------------------
@@ -28,7 +28,7 @@ for i = 1: N
     id = ['00',num2str(i)] ;
     id = id(end-1:end) ;
     [IM,im2] = ElectrodeGeneration(dimension,resolution,composition) ;
-    save([folder_struct,id,'_',filename_struct,'.mat'],'IM') ;
+    % save([folder_struct,id,'_',filename_struct,'.mat'],'IM') ;
 end
 %% Electrode Meshing
 % INPUTS -----------------
