@@ -44,8 +44,6 @@ folder_struct = '/' ; % Folder where the electrodes structures are located
 thickness = 150 ; % Total thickness of the electrodes (um)
 % Open TauFactor
 %--------------------
-cd('/media/meng/Elements1/LESC_2022_2024/COMSOl_ML/GitHub/Codes/MATLAB Codes/Stochastic Generation/')
-
 STRUCTfiles = dir(fullfile(folder_struct,'*.mat*')) ; % Get all the .mat electrodes files in folder_struct
 N = length(STRUCTfiles) ;
 for i = 1:N
