@@ -7,7 +7,6 @@
 % method and machine learning coupling', M.Chouchane et al. (2024)
 
 % INPUTS -----------------
-cd('/media/meng/Elements1/LESC_2022_2024/COMSOl_ML/GitHub/Codes/MATLAB Codes/Stochastic Generation/')
 folder_struct = '/'; % folder where to save the electrodes
 filename_struct = 'Electrode' ; % Name of the svaed file for the electrode
 N = 10 ; % Number of electrodes to generate
@@ -36,7 +35,6 @@ end
 resolution = 1/3; % Resolution of the electrodes (um/pixel)
 folder_struct = '/' ; % folder where the electrodes are located
 folder_mesh = '/' ; % folder where to save the meshes
-cd('/home/meng/Mehdi/Matlab Scripts/ALL Codes AND DATA/iso2mesh-2018-linux64/iso2mesh/')
 % ------------------------
 STRUCTfiles = dir(fullfile(folder_struct,'*.mat*')) ;
 N = length(STRUCTfiles) ;
